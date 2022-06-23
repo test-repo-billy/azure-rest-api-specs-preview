@@ -1,0 +1,50 @@
+{
+  "parameters": {
+    "api-version": "2022-03-01",
+    "subscriptionId": "subid",
+    "resourceGroupName": "rg1",
+    "$skipToken": "opaqueString"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "westus_gs1",
+            "location": "westus",
+            "id": "/subscriptions/subid/resourceGroups/rg1/providers/Microsoft.Orbital/groundStations/westus_gs1",
+            "properties": {
+              "provisioningState": "Succeeded",
+              "city": "redmond",
+              "providerName": "Microsoft",
+              "capabilities": ["EarthObservation", "Communication"],
+              "longitudeDegrees": 47.674,
+              "latitudeDegrees": -122.122,
+              "altitudeMeters": 1500.83,
+              "releaseMode": "",
+              "globalCommunicationsInfo": {
+                "globalCommunicationsSite": {
+                  "id": "/subscriptions/subId/providers/Microsoft.Orbital/globalCommunicationsSites/contoso-Vernon"
+                },
+                "partnerRouters": [
+                  {
+                    "name": "contoso01"
+                  },
+                  {
+                    "name": "contoso02"
+                  }
+                ]
+              }
+            },
+            "type": "Microsoft.Orbital/groundStations",
+            "tags": {
+              "key1": "value1",
+              "key2": "value2"
+            }
+          }
+        ],
+        "nextLink": "string"
+      }
+    }
+  }
+}
