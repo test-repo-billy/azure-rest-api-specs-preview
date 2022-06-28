@@ -1,0 +1,50 @@
+{
+  "parameters": {
+    "api-version": "2022-03-01",
+    "subscriptionId": "subid",
+    "resourceGroupName": "rg1",
+    "edgeSiteName": "oep1",
+    "parameters": {
+      "tags": {
+        "tag1": "value1",
+        "tag2": "value2"
+      }
+    }
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "oep1",
+        "id": "/subscriptions/subid/resourceGroups/rg1/providers/Microsoft.Orbital/edgeSites/oep1",
+        "etag": "W/\"b4996a1f-585b-4ae7-b1b1-0090a566020f\"",
+        "type": "Microsoft.Orbital/edgeSites",
+        "location": "westus",
+        "tags": {
+          "tag1": "value1",
+          "tag2": "value2"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "globalCommunicationsInfo": {
+            "globalCommunicationsSite": {
+              "id": "/subscriptions/subId/providers/Microsoft.Orbital/globalCommunicationsSites/contoso-Vernon"
+            },
+            "partnerRouters": [
+              {
+                "name": "contoso01"
+              },
+              {
+                "name": "contoso02"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "202": {
+      "headers": {
+        "Location": "https://management.azure.com/Microsoft.Orbital/operationResults/4e2ffff7-b331-4fcb-ab11-b5fa49368188?api-version=2022-03-01"
+      }
+    }
+  }
+}
