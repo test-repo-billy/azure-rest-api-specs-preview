@@ -1,0 +1,39 @@
+{
+  "parameters": {
+    "api-version": "2022-03-01",
+    "subscriptionId": "subid",
+    "resourceGroupName": "rg1",
+    "edgeSiteName": "es1"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "name": "es1",
+        "id": "/subscriptions/subid/resourceGroups/rg1/providers/Microsoft.Orbital/edgeSites/es1",
+        "etag": "W/\"b4996a1f-585b-4ae7-b1b1-0090a566020f\"",
+        "type": "Microsoft.Orbital/edgeSites",
+        "location": "westus",
+        "tags": {
+          "tag1": "value1",
+          "tag2": "value2"
+        },
+        "properties": {
+          "provisioningState": "Succeeded",
+          "globalCommunicationsInfo": {
+            "globalCommunicationsSite": {
+              "id": "/subscriptions/subId/providers/Microsoft.Orbital/globalCommunicationsSites/contoso-Vernon"
+            },
+            "partnerRouters": [
+              {
+                "name": "contoso01"
+              },
+              {
+                "name": "contoso02"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
