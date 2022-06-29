@@ -1,0 +1,31 @@
+{
+  "parameters": {
+    "api-version": "2022-03-01",
+    "subscriptionId": "subid"
+  },
+  "responses": {
+    "200": {
+      "body": {
+        "value": [
+          {
+            "name": "contoso-Vernon",
+            "id": "/subscriptions/subId/providers/Microsoft.Orbital/globalCommunicationsSites/contoso-Vernon",
+            "etag": "W/\"b4996a1f-585b-4ae7-b1b1-0090a566020f\"",
+            "type": "Microsoft.Orbital/globalCommunicationsSites",
+            "properties": {
+              "locationData": {
+                "city": "Vernon",
+                "district": "Texas",
+                "country": "United States of America",
+                "extra": "Zip code: 76384",
+              "closestAzureRegion": "southcentralus"
+              },
+              "globalCommunicationsSiteType": "GroundStation"
+            }
+          }
+        ],
+        "nextLink": "https://example.com"
+      }
+    }
+  }
+}
